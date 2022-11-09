@@ -1,6 +1,6 @@
 {
-  "name": "node-ssdp",
-  "description": "A node.js SSDP client and server library.",
+  "name": "node-ssdp-response",
+  "description": "A fork of node.js SSDP client and server library that emits response events",
   "keywords": [
     "ssdp",
     "multicast",
@@ -10,8 +10,8 @@
     "chromecast",
     "iot"
   ],
-  "version": "4.0.1",
-  "author": "Ilya Shaisultanov <ilya.shaisultanov@gmail.com>",
+  "version": "4.1.0",
+  "author": "Brian Beaird",
   "dependencies": {
     "async": "^2.6.0",
     "bluebird": "^3.5.1",
@@ -21,10 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/diversario/node-ssdp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/diversario/node-ssdp/issues"
+    "url": "https://github.com/brbeaird/node-ssdp.git"
   },
   "main": "./index",
   "engines": {
@@ -38,10 +35,9 @@
     "sinon": "^4.5.0"
   },
   "scripts": {
-    "test": "mocha --exit --recursive test",
-    "coverage": "istanbul cover node_modules/.bin/_mocha -- test/lib --recursive"
+    "test": "mocha --exit --recursive test"
   },
-  "homepage": "https://github.com/diversario/node-ssdp#readme",
+  "homepage": "https://github.com/brbeaird/node-ssdp#readme",
   "directories": {
     "example": "example",
     "test": "test"
